@@ -3,6 +3,8 @@ from pyspark import SparkConf, SparkContext
 conf = SparkConf().setMaster("local").setAppName("PopularHero")
 sc = SparkContext(conf = conf)
 
+#4758 3423 3249 9091 2812
+#o primeiro numero eh o id do personagem e quais ele contracenou nesse filme
 def countCoOccurences(line):
     elements = line.split()
     return (int(elements[0]), len(elements) - 1)
